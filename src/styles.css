@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  margin: 30px 40px 30px;
+  font-family: "Noto Sans Avestan", sans-serif;
+}
+h1 {
+  padding-top: 20px;
+  font-size: 20px;
+  color: rgb(88, 207, 98);
+}
+h2 {
+  font-size: 40px;
+}
+.city {
+  color: rgb(219, 72, 224);
+  font-weight: 400;
+}
+.currentTemperature {
+  font-size: 60px;
+  color: rgb(29, 83, 231);
+  font-weight: 100;
+}
+.col-6 {
+  line-height: 50px;
+}

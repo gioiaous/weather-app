@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>What's the weather?</title>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Avestan&display=swap"
+      rel="stylesheet"
+    />
+    <link href="src/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="my-form" onsubmit="showCurrentCity(event, this.cityName.value)">
+        <input
+          type="text"
+          class="form-control form-control-lg"
+          id="city-search"
+          name="cityName"
+          placeholder="Search for a city"
+          style="border-color: #58cf62; border-radius: 15px"
+        />
+        <input
+          type="submit"
+          value="Search"
+          style="border-color: #58cf62; border-radius: 15px"
+        />
+      </form>
+      <h1>Currently</h1>
+      <h2 class="city">Buenos Aires</h2>
+      <p class="currentTemperature">☀️ 68°</p>
+      <p id="temp-converter"><a href="">Celsius, please</a></p>
+      <h1>This week</h1>
+      <div class="row">
+        <div class="col-6" style="color: #db48e0">
+          Sat<br />Sun<br />Mon<br />Tues<br />Wed
+        </div>
+        <div class="col-6" style="color: #1d53e7">
+          72°<br />61°<br />69°<br />75°<br />67°
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </body>
+</html>
